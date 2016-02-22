@@ -7,7 +7,7 @@ WORKDIR /seafile
 ADD https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_5.0.4_x86-64.tar.gz /
 RUN tar -zxvf /seafile-server*5.0.4_x86-64.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
 
-COPY workspace/* .
+COPY workspace/* ./
 COPY start.sh .
 RUN chmod +x start.sh
 
