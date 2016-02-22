@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y python2.7 libpython2.7 python-setuptool
 RUN mkdir /seafile
 WORKDIR /seafile
 ADD https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_5.0.4_x86-64.tar.gz /
-RUN tar -zxvf /seafile-server_stable_5.0.4_x86-64.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
+RUN tar -zxvf /seafile-server*5.0.4_x86-64.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
 
 COPY workspace/* .
 COPY start.sh .
