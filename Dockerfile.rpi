@@ -7,7 +7,7 @@ WORKDIR /seafile
 ADD https://github.com/haiwen/seafile-rpi/releases/download/v5.0.4/seafile-server_stable_5.0.4_pi.tar.gz /
 RUN tar -zxvf /seafile-server_stable_5.0.4_pi.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
 
-COPY workspace/* .
+COPY workspace/* ./
 COPY start.sh .
 RUN chmod +x start.sh
 
