@@ -1,0 +1,8 @@
+[02/11/16 21:15:15] seafile-controller.c(154): starting ccnet-server ...
+[02/11/16 21:15:15] seafile-controller.c(73): spawn_process: ccnet-server -F /seafile/conf -c /seafile/ccnet -f /seafile/logs/ccnet.log -d -P /seafile/pids/ccnet.pid
+[02/11/16 21:15:15] seafile-controller.c(88): spawned ccnet-server, pid 676
+[02/11/16 21:15:16] seafile-controller.c(555): ccnet daemon connected.
+[02/11/16 21:15:16] seafile-controller.c(186): starting seaf-server ...
+[02/11/16 21:15:16] seafile-controller.c(73): spawn_process: seaf-server -F /seafile/conf -c /seafile/ccnet -d /seafile/seafile-data -l /seafile/logs/seafile.log -P /seafile/pids/seaf-server.pid
+[02/11/16 21:15:16] seafile-controller.c(88): spawned seaf-server, pid 680
+[02/11/16 21:15:16] seafile-controller.c(528): seafdav not enabled.

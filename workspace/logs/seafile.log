@@ -1,0 +1,2 @@
+[02/11/16 21:15:17] ../common/mq-mgr.c(60): [mq client] mq cilent is started
+[02/11/16 21:15:17] ../common/mq-mgr.c(106): [mq mgr] publish to hearbeat mq: seaf_server.heartbeat

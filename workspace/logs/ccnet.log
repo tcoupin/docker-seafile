@@ -1,0 +1,9 @@
+[02/11/16 21:15:15] ../common/session.c(132): using config file /seafile/conf/ccnet.conf
+[02/11/16 21:15:15] ../common/session.c(484): Listen on /seafile/ccnet/ccnet.sock for local clients
+[02/11/16 21:15:15] ../common/session.c(290): Update pubinfo file
+[02/11/16 21:15:16] ../common/session.c(398): Accepted a local client
+[02/11/16 21:15:16] ../common/session.c(398): Accepted a local client
+[02/11/16 21:15:16] ../common/session.c(398): Accepted a local client
+[02/11/16 21:15:16] ../common/session.c(398): Accepted a local client
+[02/11/16 21:15:33] ../common/session.c(398): Accepted a local client
+[02/11/16 21:15:54] ../common/peer.c(943): Local peer down
