@@ -4,8 +4,8 @@ MAINTAINER Thibault Coupin <thibault.coupin@gmail.com>
 RUN apt-get update && apt-get install -y python2.7 libpython2.7 python-setuptools python-imaging python-ldap sqlite3 
 RUN mkdir /seafile
 WORKDIR /seafile
-ADD https://github.com/haiwen/seafile-rpi/releases/download/v5.0.4/seafile-server_stable_5.0.4_pi.tar.gz /
-RUN tar -zxvf /seafile-server_stable_5.0.4_pi.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
+ADD https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_5.0.4_x86-64.tar.gz /
+RUN tar -zxvf /seafile-server_stable_5.0.4_x86-64.tar.gz && ln -s seafile-server-5.0.4 seafile-server-latest
 
 COPY workspace/* .
 COPY start.sh .
