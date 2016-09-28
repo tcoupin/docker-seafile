@@ -1,13 +1,16 @@
 seafile:
-  image: tcoupin/rpi-seafile-sqlite
+  build: ./
+  # image: tcoupin/seafile-sqlite
+  # dockerfile: Dockerfile.rpi	
+  # image: tcoupin/rpi-seafile-sqlite
   ports:
     - 8082:8082
     - 8000:8000
   volumes:
-    - /mnt/seafile:/mnt/seafile
-    - /mnt/seafile/logs:/seafile/logs
-    - /mnt/seafile/seafile-data:/seafile/seafile-data
-    - /mnt/seafile/seahub-data:/seafile/seahub-data
-    - /mnt/seafile/ccnet:/seafile/ccnet
-    - /mnt/seafile/conf:/seafile/conf
+    - ./workspace:/mnt/seafile
+    - ./workspace/logs:/seafile/logs
+    - ./workspace/seafile-data:/seafile/seafile-data
+    - ./workspace/seahub-data:/seafile/seahub-data
+    - ./workspace/ccnet:/seafile/ccnet
+    - ./workspace/conf:/seafile/conf
   command: bash -c "rm /seafile/seahub.db && ln -s /mnt/seafile/seahub.db && ./start.sh && tail -f /seafile/logs/seahub.log"
