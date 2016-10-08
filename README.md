@@ -9,3 +9,6 @@ See at docker-compose for mount volume for data and conf.
 
 Default user : foo@bar.com, password foobar
 
+Docker images :
+- https://hub.docker.com/r/tcoupin/seafile-sqlite/
+- https://hub.docker.com/r/tcoupin/rpi-seafile-sqlite/
